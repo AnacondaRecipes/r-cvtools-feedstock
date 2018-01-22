@@ -10,8 +10,8 @@ package:
 source:
   fn: cvTools_{{ version }}.tar.gz
   url:
-    - https://cran.r-project.org/src/contrib/cvTools_{{ version }}.tar.gz
-    - https://cran.r-project.org/src/contrib/Archive/cvTools/cvTools_{{ version }}.tar.gz
+    - {{ cran_mirror }}/src/contrib/cvTools_{{ version }}.tar.gz
+    - {{ cran_mirror }}/src/contrib/Archive/cvTools/cvTools_{{ version }}.tar.gz
   sha256: 520f0b194444d918440e971b16ad4e8579f953dd6d39ffc5f87b61589b59fd2c
 
 
