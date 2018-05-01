@@ -14,22 +14,15 @@ source:
     - {{ cran_mirror }}/src/contrib/Archive/cvTools/cvTools_{{ version }}.tar.gz
   sha256: 520f0b194444d918440e971b16ad4e8579f953dd6d39ffc5f87b61589b59fd2c
 
-
-  # patches:
-   # List any patch files here
-   # - fix.patch
-
 build:
   merge_build_host: True  # [win]
   # If this is a new build for the same version, increment the build number.
   number: 0
 
-
   # This is required to make R link correctly on Linux.
   rpaths:
     - lib/R/lib/
     - lib/
-
 
 requirements:
   build:
